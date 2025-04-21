@@ -418,6 +418,7 @@ begin
         ab_en <= 0;
         o_start_mul32 <= 0;
         en_a <= 0;
+        en_shift_ab <= 0;
         done_shift_gf32mul <= 0;
         o_start_add32 <= 1;
         alpha_en <= 0;
@@ -432,6 +433,7 @@ begin
         ab_en <= 0;
         o_start_mul32 <= 0;
         en_a <= 0;
+        en_shift_ab <= 0;
         done_shift_gf32mul <= 0;
         o_start_add32 <= 0;
         sel_b <= 0;
@@ -451,6 +453,7 @@ begin
         ab_en <= 0;
         o_start_mul32 <= 0;
         en_a <= 0;
+        en_shift_ab <= 0;
         done_shift_gf32mul <= 0;
         alpha_en <= 0;
         sel_b <= 0;
@@ -465,6 +468,7 @@ begin
         ab_en <= 0;
         o_start_mul32 <= 0;
         en_a <= 0;
+        en_shift_ab <= 0;
         done_shift_gf32mul <= 0;
         alpha_en <= 0;
         sel_b <= 0;
@@ -485,6 +489,7 @@ begin
         ab_en <= 0;
         o_start_mul32 <= 0;
         en_a <= 0;
+        en_shift_ab <= 0;
         done_shift_gf32mul <= 0;
         alpha_en <= 0;
         sel_b <= 1;
@@ -499,6 +504,7 @@ begin
         ab_en <= 0;
         o_start_mul32 <= 0;
         en_a <= 0;
+        en_shift_ab <= 0;
         done_shift_gf32mul <= 0;
         alpha_en <= 0;
         sel_b <= 0;
@@ -518,9 +524,11 @@ begin
         ab_en <= 0;
         o_start_mul32 <= 0;
         en_a <= 0;
+        en_shift_ab <= 0;
         done_shift_gf32mul <= 0;
         alpha_en <= 0;
         sel_b <= 0;
+        o_start_add32 <= 0;
         beta_en <= 0;
     end
 

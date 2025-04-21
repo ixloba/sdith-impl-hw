@@ -452,7 +452,7 @@ begin
     if (i_start) begin
         b_reg <= i_b;
     end
-    else if (shift_a_reg) begin
+    else if (shift_b_reg) begin
         b_reg <= {b_reg[32*T-32-1:0], b_reg[32*T-1:32*T-32]};
     end
 end
@@ -1039,7 +1039,7 @@ begin
         alpha_en <= 0;
         sel_b <= 0;
         o_start_add32 <= 1;
-        beta_en <= 0;
+        beta_en <= 1;
         en_pr <= 0;
         shift_pf <= 0;
         en_fr <= 0;
@@ -1146,7 +1146,7 @@ begin
 
     s_start_f_eval: begin
         sel_r_eps <= 0;
-        sel_qs <= 2;
+        sel_qs <= 3;
         o_start_evaluate <= 1;
         ab_en <= 0;
         o_start_mul32 <= 0;
@@ -1172,7 +1172,7 @@ begin
 
     s_done_f_eval: begin
         sel_r_eps <= 0;
-        sel_qs <= 2;
+        sel_qs <= 3;
         o_start_evaluate <= 0;
         ab_en <= 0;
         o_start_mul32 <= 0;
